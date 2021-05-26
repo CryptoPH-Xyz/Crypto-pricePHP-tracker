@@ -11,12 +11,6 @@ export default function Coin(props) {
           </div>
           <div className='coin-data'>
             <p className='coin-price'>₱{props.price.toLocaleString()}</p>
-  
-            {props.priceChange1h < 0 ? (
-              <p className='coin-percent red'>{props.priceChange1h.toFixed(2)}%</p>
-            ) : (
-              <p className='coin-percent green'>{props.priceChange1h.toFixed(2)}%</p>
-            )}
 
             {props.priceChange24h < 0 ? (
               <p className='coin-percent red'>{props.priceChange24h.toFixed(2)}%</p>
@@ -40,3 +34,5 @@ export default function Coin(props) {
       </div>
     )
 }
+
+//fix 1h green toFixed(2) part
