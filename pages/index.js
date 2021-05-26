@@ -31,7 +31,6 @@ export default function Home() {
       </Head>
       <div className='coin-app'>
       <div className='coin-search'>
-        <h1 className='coin-text'>Search a currency</h1>
         <form>
           <input
             className='coin-input'
